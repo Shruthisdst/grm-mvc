@@ -1,11 +1,11 @@
-<h1>ಶ್ರೀ ಜಯಚಾಮರಾಜೇಂದ್ರ ಗ್ರಂಥರತ್ನಮಾಲಾ ಆಕರಗಳು</h1>
+<h1>ಶ್ರೀ ಜಯಚಾಮರಾಜೇಂದ್ರ ಗ್ರಂಥರತ್ನಮಾಲಾ ಸಂಗ್ರಹ</h1>
 <div class="container-fluid">
     <div class="list-unstyled list-inline attr-list">
         <a id="puranagalu" href="<?=BASE_URL?>ಸಂಗ್ರಹ/puranagalu">ಪುರಾಣಗಳು</a>
         <a id="rigveda" class="active" href="<?=BASE_URL?>ಸಂಗ್ರಹ/rigveda">ಋಗ್ವೇದ ಸಂಹಿತಾ</a>
         <a id="other" href="<?=BASE_URL?>ಸಂಗ್ರಹ/other">ಇತರೆ</a>
     </div>
-    <div class="row column-3 columnar-list">
+    <div class="row column-2 columnar-list">
 		<ol>
 			<li class="gap-below"><a href="<?=BASE_URL?>listing/treeview/288">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೧</a></li>
 			<li class="gap-below"><a href="<?=BASE_URL?>listing/treeview/289">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೨–ಪ್ರಥಮಾಷ್ಟಕ ಪ್ರಥಮಾಧ್ಯಾಯ</a></li>

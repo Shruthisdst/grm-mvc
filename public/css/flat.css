@@ -647,6 +647,7 @@
   font-size: 22px;
   min-width: 120px;
   background-color: #777;
+  text-align: center;
 }
 h2.lead-head.red{
   background-color: #BF360C;
@@ -659,12 +660,12 @@ h2.lead-head.blue{
   text-align: right;
 }
 .structure-1 li{
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
-  line-height: 36px;
+  line-height: 30px;
 }
 .structure-1 li a{
-  font-size: 20px;
+  font-size: 17px;
   color: #B71C1C;
   padding: 0 8px;
 }
@@ -796,3 +797,4 @@ div.pada-list a{
   font-size: 18px;
   line-height: 36px !important;
 }
+
