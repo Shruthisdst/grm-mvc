@@ -1,0 +1,12 @@
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-brand{
+	padding: 0;
+}
+.navbar-brand img{
+	max-height: 50px;
+}
+.navbar-nav>li>a{
+	line-height: 50px;
+}
