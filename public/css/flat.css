@@ -644,8 +644,6 @@
 background: #e52d27; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #e52d27 , #b31217); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #e52d27 , #b31217); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        
 }
 
 .structure-1 .eng{
@@ -768,7 +766,7 @@ div.attr-list, div.pada-list{
 div.attr-list a{
   display: inline-block;
   color: inherit;
-  padding: 5px 20px;
+  padding: 9px 20px 5px 20px;
   margin: 0 5px;
   background-color: #EFEFEF;
 }
