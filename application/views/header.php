@@ -31,6 +31,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="<?=PUBLIC_URL?>css/normalize.css">
     <link rel="stylesheet" href="<?=PUBLIC_URL?>css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="<?=PUBLIC_URL?>js/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=PUBLIC_URL?>css/style.css?version=1.0">
