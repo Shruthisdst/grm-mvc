@@ -42,7 +42,7 @@
 			<li class="gap-below"><a href="<?=BASE_URL?>listing/treeview/320">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೩–ಐತರೇಯಬ್ರಾಹ್ಮಣಂ(ಮೂರನೆಯ ಭಾಗ) ಮತ್ತು ಐತರೇಯಾರಣ್ಯಕಂ(ಐತರೇಯೋಪನಿಷ್ಸಹಿತ)</a></li>
 			<li class="gap-below"><a href="<?=BASE_URL?>listing/treeview/321">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೪–ನಿರುಕ್ತ ಪೂರ್ವಷಟ್ಕಂ</a></li>
 			<li class="gap-below"><a href="<?=BASE_URL?>listing/treeview/322">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೫–ನಿರುಕ್ತ ಉತ್ತರಷಟ್ಕಂ</a></li>
-			<li class="gap-below"><a href="<?=VOL_URL?>323/index.djvu">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೬</a></li>
+			<li class="gap-below"><a href="<?=GRM_URL?>323/index.djvu">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೬</a></li>
 		</ol>
     </div>
 </div>

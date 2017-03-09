@@ -10,7 +10,7 @@ class viewHelper extends View {
     public function displayTitle($bcode, $title, $page)
     {
 		$title = preg_replace('/—/',"",$title);
-		$djvuLink = VOL_URL . $bcode . '/index.djvu?djvuopts&amp;page='.$page.'.djvu&amp;zoom=page';
+		$djvuLink = GRM_URL . $bcode . '/index.djvu?djvuopts&amp;page='.$page.'.djvu&amp;zoom=page';
 		$titlePath = '<a href="'.$djvuLink.'" target="_blank">'.$title.'</a>';
 		return $titlePath;
 	}

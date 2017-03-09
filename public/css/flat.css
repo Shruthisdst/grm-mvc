@@ -648,6 +648,7 @@
   min-width: 120px;
   background-color: #777;
   text-align: center;
+  line-height: 30px;
 }
 h2.lead-head.red{
   background-color: #BF360C;
@@ -662,7 +663,7 @@ h2.lead-head.blue{
 .structure-1 li{
   font-size: 17px;
   text-align: center;
-  line-height: 30px;
+  line-height: 32px;
 }
 .structure-1 li a{
   font-size: 17px;

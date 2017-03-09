@@ -26,9 +26,9 @@
 			<li class="gap-below"><a href="<?=BASE_URL?>listing/purana/ಶ್ರೀಮದಧ್ಯಾತ್ಮರಾಮಾಯಣಂ">ಶ್ರೀಮದಧ್ಯಾತ್ಮರಾಮಾಯಣಂ (3 ಸಂಪುಟಗಳು)</a></li>
 			<li class="gap-below"><a href="<?=BASE_URL?>listing/purana/ಶಿವತತ್ತ್ವಸುಧಾನಿಧಿಃ">ಶಿವತತ್ತ್ವಸುಧಾನಿಧಿಃ (3 ಸಂಪುಟಗಳು)</a></li>
 			<li class="gap-below"><a href="<?=BASE_URL?>listing/purana/ಶ್ರೀ ಲಲಿತೋಪಾಖ್ಯಾನಂ">ಶ್ರೀ ಲಲಿತೋಪಾಖ್ಯಾನಂ (2 ಸಂಪುಟಗಳು)</a></li>
-			<li class="gap-below"><a href="<?=VOL_URL?>285/index.djvu">ವರಿವಸ್ಯಾ ರಹಸ್ಯಂ</a></li>
-			<li class="gap-below"><a href="<?=VOL_URL?>324/index.djvu">ವನದುರ್ಗೋಪನಿಷತ್‍</a></li>
-			<li class="gap-below"><a href="<?=VOL_URL?>325/index.djvu">ಶಾಕ್ತೋಪನಿಷದಃ</a></li>
+			<li class="gap-below"><a href="<?=GRM_URL?>285/index.djvu">ವರಿವಸ್ಯಾ ರಹಸ್ಯಂ</a></li>
+			<li class="gap-below"><a href="<?=GRM_URL?>324/index.djvu">ವನದುರ್ಗೋಪನಿಷತ್‍</a></li>
+			<li class="gap-below"><a href="<?=GRM_URL?>325/index.djvu">ಶಾಕ್ತೋಪನಿಷದಃ</a></li>
 		</ol>
     </div>
 </div>

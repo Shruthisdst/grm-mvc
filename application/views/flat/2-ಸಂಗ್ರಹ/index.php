@@ -11,25 +11,27 @@
         </div>
         <div class="col-md-6 clear-paddings">
             <div class="structure-1">
+                <h2 class="lead">The Collection of Hindu Law Texts</h2>
+                <ul class="list-inline">
+					<li class="small-text">The Smrtichandrika<br />An English Translation with Notes</li>
+					<li><a href="Hindu_law_texts"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;More</a></li>
+                </ul>
+            </div>
+        </div>
+        
+     </div>
+    <div class="row">
+		<div class="col-md-6 clear-paddings">
+            <div class="structure-1">
                 <h2 class="lead">ವಾಣಿವಿಲಾಸ್ ಸಂಗ್ರಹ</h2>
                 <ul class="list-inline">
 					<li><a href=""><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;ಮುಂದೆ</a></li>
                 </ul>
             </div>
         </div>
-     </div>
-    <div class="row">
         <div class="col-md-6 clear-paddings">
             <div class="structure-1">
                 <h2 class="lead">ಸಪ್ನಾ ಬುಕ್ ಹೌಸ್ ಸಂಗ್ರಹ</h2>
-                <ul class="list-inline">
-					<li><a href=""><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;ಮುಂದೆ</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6 clear-paddings">
-            <div class="structure-1">
-                <h2 class="lead">ಇತರೆ ಸಂಗ್ರಹ</h2>
                 <ul class="list-inline">
 					<li><a href=""><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;ಮುಂದೆ</a></li>
                 </ul>
