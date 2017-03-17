@@ -1,9 +1,9 @@
 <h1>ಶ್ರೀ ಜಯಚಾಮರಾಜೇಂದ್ರ ಗ್ರಂಥರತ್ನಮಾಲಾ ಸಂಗ್ರಹ</h1>
 <div class="container-fluid">
     <div class="list-unstyled list-inline attr-list">
-        <a id="puranagalu" href="<?=BASE_URL?>ಸಂಗ್ರಹ/puranagalu">ಪುರಾಣಗಳು</a>
-        <a id="rigveda" class="active" href="<?=BASE_URL?>ಸಂಗ್ರಹ/rigveda">ಋಗ್ವೇದ ಸಂಹಿತಾ</a>
-        <a id="other" href="<?=BASE_URL?>ಸಂಗ್ರಹ/other">ಇತರೆ</a>
+        <a id="puranagalu" class="btn btn-primary btn-lg" href="<?=BASE_URL?>ಸಂಗ್ರಹ/puranagalu">ಪುರಾಣಗಳು</a>
+        <a id="rigveda" class="btn btn-primary btn-lg active" href="<?=BASE_URL?>ಸಂಗ್ರಹ/rigveda">ಋಗ್ವೇದ ಸಂಹಿತಾ</a>
+        <a id="other" class="btn btn-primary btn-lg" href="<?=BASE_URL?>ಸಂಗ್ರಹ/other">ಇತರೆ</a>
     </div>
     <div class="row">
 		<div class="col-sm-1"></div>
@@ -44,7 +44,7 @@
 				<li class="gap-below"><a href="<?=BASE_URL?>listing/treeview/320">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೩–ಐತರೇಯಬ್ರಾಹ್ಮಣಂ(ಮೂರನೆಯ ಭಾಗ) ಮತ್ತು ಐತರೇಯಾರಣ್ಯಕಂ(ಐತರೇಯೋಪನಿಷ್ಸಹಿತ)</a></li>
 				<li class="gap-below"><a href="<?=BASE_URL?>listing/treeview/321">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೪–ನಿರುಕ್ತ ಪೂರ್ವಷಟ್ಕಂ</a></li>
 				<li class="gap-below"><a href="<?=BASE_URL?>listing/treeview/322">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೫–ನಿರುಕ್ತ ಉತ್ತರಷಟ್ಕಂ</a></li>
-				<li class="gap-below"><a href="<?=GRM_URL?>323/index.djvu">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೬</a></li>
+				<li class="gap-below"><a href="<?=GRM_URL?>323/index.djvu" target="_blank">ಋಗ್ವೇದಸಂಹಿತಾ ಭಾಗ–೩೬</a></li>
 			</ol>
 		</div>
     </div>

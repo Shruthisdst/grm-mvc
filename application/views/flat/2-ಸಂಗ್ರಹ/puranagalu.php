@@ -1,9 +1,9 @@
 <h1>ಶ್ರೀ ಜಯಚಾಮರಾಜೇಂದ್ರ ಗ್ರಂಥರತ್ನಮಾಲಾ ಸಂಗ್ರಹ</h1>
 <div class="container-fluid">
     <div class="list-unstyled list-inline attr-list">
-        <a id="puranagalu" class="active" href="<?=BASE_URL?>ಸಂಗ್ರಹ/puranagalu">ಪುರಾಣಗಳು</a>
-        <a id="rigveda" href="<?=BASE_URL?>ಸಂಗ್ರಹ/rigveda">ಋಗ್ವೇದ ಸಂಹಿತಾ</a>
-        <a id="other" href="<?=BASE_URL?>ಸಂಗ್ರಹ/other">ಇತರೆ</a>
+        <a id="puranagalu" class="btn btn-primary btn-lg active" href="<?=BASE_URL?>ಸಂಗ್ರಹ/puranagalu">ಪುರಾಣಗಳು</a>
+        <a id="rigveda" class="btn btn-primary btn-lg" href="<?=BASE_URL?>ಸಂಗ್ರಹ/rigveda">ಋಗ್ವೇದ ಸಂಹಿತಾ</a>
+        <a id="other" class="btn btn-primary btn-lg" href="<?=BASE_URL?>ಸಂಗ್ರಹ/other">ಇತರೆ</a>
     </div>
     <div class="row">
 		<div class="col-sm-2"></div>
@@ -33,7 +33,7 @@
 				<li class="gap-below"><a href="<?=BASE_URL?>listing/purana/ನರಸಿಂಹ ಪುರಾಣ">ನರಸಿಂಹ ಪುರಾಣ (3 ಸಂಪುಟಗಳು)</a></li>
 				<li class="gap-below"><a href="<?=BASE_URL?>listing/purana/ಮಾರ್ಕಂಡೇಯ ಪುರಾಣ">ಮಾರ್ಕಂಡೇಯ ಪುರಾಣ  (4 ಸಂಪುಟಗಳು)</a></li>
 				<li class="gap-below"><a href="<?=BASE_URL?>listing/purana/ಶ್ರೀಮದ್ವಾಯುಮಹಾಪುರಾಣ">ಶ್ರೀಮದ್ವಾಯು ಮಹಾಪುರಾಣಂ (6 ಸಂಪುಟಗಳು)</a></li>
-		</ol>
+			</ol>
 		</div>
 	</div>
 </div>

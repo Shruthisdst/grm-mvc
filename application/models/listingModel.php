@@ -14,7 +14,7 @@ class listingModel extends Model {
 		
 		if(is_null($dbh))return null;
 		
-		$sth = $dbh->prepare('SELECT DISTINCT book_id, btitle FROM ' . PURANA_TABLE . ' WHERE ctitle = :ctitle');
+		$sth = $dbh->prepare('SELECT DISTINCT book_id, btitle, cname FROM ' . PURANA_TABLE . ' WHERE ctitle = :ctitle');
 		$sth->bindParam(':ctitle', $ctitle);
 		$sth->execute();
 

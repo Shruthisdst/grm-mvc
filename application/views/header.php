@@ -24,7 +24,9 @@
     <script type="text/javascript" src="<?=PUBLIC_URL?>js/jquery.viewport.js"></script>
     <script type="text/javascript" src="<?=PUBLIC_URL?>js/bootstrap-3.3.7/js/bootstrap.min.js"> </script>
     <script type="text/javascript" src="<?=PUBLIC_URL?>js/common.js"></script>
+    <script type="text/javascript" src="<?=PUBLIC_URL?>js/kannada_kbd.js"></script>
     <script type="text/javascript" src="<?=PUBLIC_URL?>js/treeview.js"></script>
+    <script type="text/javascript" src="<?=PUBLIC_URL?>js/jquery-2.0.0.min.js"></script>
     <script type="text/javascript">var base_url = "<?= BASE_URL?>";</script>
     
     <!-- CSS
