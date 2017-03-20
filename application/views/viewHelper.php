@@ -21,25 +21,40 @@ class viewHelper extends View {
 		}
 		return $path;
 	}
-	
+
 	public function displaySearchTitle($bcode, $title, $page, $searchWord)
-    {
-		$title = preg_replace('/—/',"",$title);
-		$title = preg_replace("/$searchWord/", "<span class='searchWord'>$searchWord</span>", $title);
+	{
+		$title = preg_replace('/ — /',"—", $title);
+		$words = preg_split('/ /', $title);
+		$searchWords = preg_split('/ /', $searchWord);
+		foreach($searchWords as $sWord)
+		{
+			$searchList = preg_grep('/' . $sWord . '/', $words);
+		}
+		$title = preg_replace('/' . $searchWord . '/', '<span class="searchWord">' . $searchWord . '</span>', $title);
+		$key = key($searchList);
+		$left = $key-10;
+		$right = $key+10;
+		$left = ($left < 0) ? 0 : $left;
+		$right = ($right > count($words)) ? count($words) : $right;
+		$right = $right-$left;
+		$output = array_slice($words, $left, $right);
+		$output = implode(" ", $output);
+		$output = preg_replace('/' . $searchWord . '/', '<span class="searchWord">' . $searchWord . '</span>', $output);
 		$djvuLink = GRM_URL . $bcode . '/index.djvu?djvuopts&amp;page='.$page.'.djvu&amp;zoom=page';
-		$titlePath = '<a href="'.$djvuLink.'" target="_blank">'.$title.'</a>';
+		$titlePath = '<a href="'.$djvuLink.'" target="_blank">.............. '.$output.' ...............</a>';
 		return $titlePath;
 	}
 
 	public function displayTitle($bcode, $title, $page)
-    {
-		$title = preg_replace('/—/',"",$title);
+	{
+		$title = preg_replace('/ — /',"—", $title);
 		$djvuLink = GRM_URL . $bcode . '/index.djvu?djvuopts&amp;page='.$page.'.djvu&amp;zoom=page';
 		$titlePath = '<a href="'.$djvuLink.'" target="_blank">'.$title.'</a>';
 		return $titlePath;
 	}
 
-    function display_stack($stack)
+	function display_stack($stack)
 	{
 		for($j=0;$j<sizeof($stack);$j++)
 		{
@@ -62,6 +77,7 @@ class viewHelper extends View {
 		
 		return $str_tabs;
 	}
+	
 
 }
 

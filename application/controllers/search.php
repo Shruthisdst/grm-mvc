@@ -15,13 +15,19 @@ class search extends Controller {
 		
 		$data = $this->model->getGetData();
 		unset($data['url']);
-		
-		if($data)
+		if($data['collection'] == '001')
 		{
-			$data = $this->model->preProcessPOST($data);
-			$result = $this->model->formGeneralQuery($data, PURANA_TABLE);
-			//~ var_dump($result);
-			($result) ? $this->view('search/result', $result) : $this->view('error/noResults', 'search/index/');
+			if($data)
+			{
+				$data = $this->model->preProcessPOST($data);
+				$result = $this->model->searchResultQuery($data, PURANA_TABLE);
+				//~ var_dump($result);
+				($result) ? $this->view('search/result', $result) : $this->view('error/noResults', 'search/index/');
+			}
+		}
+		else
+		{
+			$this->view('error/noResults', 'search/index/');
 		}
 	}
 }

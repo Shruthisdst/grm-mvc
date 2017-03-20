@@ -17,14 +17,13 @@
     <div class="row">
 		<div class="col-sm-2"></div>
 		<div class="col-sm-10 column-2 columnar-list">
-		
+
 		<?php
-		
+
 		echo '<ol>';
 
 foreach ($data as $row) {
 	echo '<li class="gap-below"><a href="' . BASE_URL . 'listing/treeview/' . $row['book_id'] . '">' . $row['btitle'] . '</a></li>';
-	
 }
 echo '</ol>';
 ?>

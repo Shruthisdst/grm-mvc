@@ -15,7 +15,10 @@
 <?php 
 echo '<ol>';
 $fl=1;
-$searchWord = $data[0]['text'];
+if(isset($data[0]['text']))
+{
+	$searchWord = $data[0]['text'];
+}
 foreach($data as $row)
 {
 	if(isset($row['btitle']))
@@ -43,14 +46,14 @@ foreach($data as $row)
 			echo '<h2>ಗ್ರಂಥಗಳ ವಿಷಯಾನುಕ್ರಮಣಿಕೆ</h2>';
 			$fl = 0;
 		}
+		
 		echo '<li class="gap-below">' . $viewHelper->displaySearchTitle($row['book_id'], $row['title'], $row['start_pages'], $searchWord) . '</li>';
 	}
 }
 echo '</ol>';
-
-
 ?>
-	 </div>
+
+	</div>
 
     </div>
 </div>

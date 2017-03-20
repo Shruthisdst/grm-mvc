@@ -2,8 +2,8 @@
 
 // db table names
 define('PURANA_TABLE', 'GM_Toc');
-define('BASEDATA_TABLE', 'basedata');
-define('CONCORDANCE_TABLE', 'concordance');
+define('MANDALA_TABLE', 'mandala_table');
+define('RUKKU_TABLE', 'Rukku_table');
 
 // Defaults
 define('DEFAULT_RIK', '1.1.1');
@@ -18,8 +18,8 @@ define('DEFAULT_ADHYAYA', '1');
 define('DEFAULT_VARGA', '1');
 
 define('DEFAULT_ATTR', 'puranagalu');
-define('DEFAULT_PADA_FROM', 'अ');
-define('DEFAULT_MANTRA_FROM', 'अ');
+define('DEFAULT_PADA_FROM', 'ಅ');
+define('DEFAULT_MANTRA_FROM', 'ಅ');
 
 
 // search settings

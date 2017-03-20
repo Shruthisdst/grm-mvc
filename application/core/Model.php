@@ -110,7 +110,7 @@ class Model {
 			$filterPieces = [];
 			foreach ($filterArray as $key => $value) {
 				
-				$data{$key} = $value;	
+				$data{$key} = $value;
 				$filterPieces[] = $key . ' = \'' . $value . '\'';
 			}
 
@@ -121,8 +121,45 @@ class Model {
 
 		$dbh = $this->db->connect(DB_NAME);
 		if(is_null($dbh))return null;
+		$sth = $dbh->prepare('SELECT DISTINCT ' . $attr . ' FROM ' . MANDALA_TABLE . ' ' . $filter . ' ORDER BY ' . $attr);
+		$sth->execute();
+
+		$data['list'] = [];
+		while($result = $sth->fetch(PDO::FETCH_ASSOC)) {
+
+			array_push($data['list'], $result);
+		}
+
+		$dbh = null;
+
+		if ($data) $data['attr'] = $attr;
+
+		return json_encode($data, JSON_UNESCAPED_UNICODE);
+	}
+	
+	public function listRukku($attr = '', $filter = '') {
+
+		if(!($attr)) return null;
 		
-		$sth = $dbh->prepare('SELECT DISTINCT ' . $attr . ' FROM ' . BASEDATA_TABLE . ' ' . $filter . ' ORDER BY ' . $attr);
+		if($filter) {
+			
+			$filterArray = json_decode($filter, True);
+			
+			$filterPieces = [];
+			foreach ($filterArray as $key => $value) {
+				
+				$data{$key} = $value;
+				$filterPieces[] = $key . ' = \'' . $value . '\'';
+			}
+
+			$filterString = 'WHERE ' . implode(' AND ', $filterPieces) . ' ';
+		
+			$filter = $filterString;
+		}
+
+		$dbh = $this->db->connect(DB_NAME);
+		if(is_null($dbh))return null;
+		$sth = $dbh->prepare('SELECT ' . $attr . ' FROM ' . RUKKU_TABLE . ' ' . $filter . ' ORDER BY ' . $attr);
 		$sth->execute();
 
 		$data['list'] = [];
