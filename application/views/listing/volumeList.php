@@ -6,19 +6,19 @@
         <a id="other" class="btn btn-primary btn-lg" href="<?=BASE_URL?>ಸಂಗ್ರಹ/other">ಇತರೆ</a>
     </div>
     <div class="row">
-		<div class="col-sm-5"></div>
-		<div class="col-sm-7">
-			<ol>
-				<li><a href="<?=BASE_URL?>listing/volumes">ಸಂಪುಟಗಳು</a></li>
-				<li><a href="<?=BASE_URL?>listing/mandala">ಮಂಡಲವರ್ಗೀಕರಣ</a></li>
-				<li>ಅಷ್ಟಕವರ್ಗೀಕರಣ</li>
-				<li>ಪದಾನುಕ್ರಮಣಿಕೆ</li>
-				<li>ವಿಷಯಗಳವರ್ಗಾನುಕ್ರಮಣಿಕೆ</li>
-				<li>ಮಂತ್ರಗಳಅಕಾರದಿ</li>
-				<li>ಐತರೇಯಬ್ರಾಹ್ಮಣ  ೧  ೨  ೩</li>
-				<li>ನಿರುಕ್ತ  ೧  ೨</li>
-			</ol>
-		</div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-11 column-6 columnar-list">
+<?php 
+$data = json_decode($data, True);
+echo '<ol class="unstyle">';
+foreach ($data as $row) {
+	echo '<li>' . $viewHelper->displayRigToc($row['book_id']) . '</li>';
+}
+echo '</ol>';
+ ?>
+
+
+	 </div>
+
     </div>
 </div>
-

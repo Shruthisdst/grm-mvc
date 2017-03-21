@@ -53,7 +53,58 @@ class viewHelper extends View {
 		$titlePath = '<a href="'.$djvuLink.'" target="_blank">'.$title.'</a>';
 		return $titlePath;
 	}
-
+	
+	public function displayRigToc($bookid)
+	{
+		$actualID = $bookid;
+		$actualID = preg_replace('/001/', '288', $actualID);
+		$actualID = preg_replace('/002/', '289', $actualID);
+		$actualID = preg_replace('/003/', '290', $actualID);
+		$actualID = preg_replace('/004/', '291', $actualID);
+		$actualID = preg_replace('/005/', '292', $actualID);
+		$actualID = preg_replace('/006/', '293', $actualID);
+		$actualID = preg_replace('/007/', '294', $actualID);
+		$actualID = preg_replace('/008/', '295', $actualID);
+		$actualID = preg_replace('/009/', '296', $actualID);
+		$actualID = preg_replace('/010/', '297', $actualID);
+		$actualID = preg_replace('/011/', '298', $actualID);
+		$actualID = preg_replace('/012/', '299', $actualID);
+		$actualID = preg_replace('/013/', '300', $actualID);
+		$actualID = preg_replace('/014/', '301', $actualID);
+		$actualID = preg_replace('/015/', '302', $actualID);
+		$actualID = preg_replace('/016/', '303', $actualID);
+		$actualID = preg_replace('/017/', '304', $actualID);
+		$actualID = preg_replace('/018/', '305', $actualID);
+		$actualID = preg_replace('/019/', '306', $actualID);
+		$actualID = preg_replace('/020/', '307', $actualID);
+		$actualID = preg_replace('/021/', '308', $actualID);
+		$actualID = preg_replace('/022/', '309', $actualID);
+		$actualID = preg_replace('/023/', '310', $actualID);
+		$actualID = preg_replace('/024/', '311', $actualID);
+		$actualID = preg_replace('/025/', '312', $actualID);
+		$actualID = preg_replace('/026/', '313', $actualID);
+		$actualID = preg_replace('/027/', '314', $actualID);
+		$actualID = preg_replace('/028/', '315', $actualID);
+		$actualID = preg_replace('/029/', '316', $actualID);
+		$actualID = preg_replace('/030/', '317', $actualID);
+		$actualID = preg_replace('/031/', '318', $actualID);
+		$actualID = preg_replace('/032/', '319', $actualID);
+		$actualID = preg_replace('/033/', '320', $actualID);
+		$actualID = preg_replace('/034/', '321', $actualID);
+		$actualID = preg_replace('/035/', '322', $actualID);
+		$actualID = preg_replace('/036/', '323', $actualID);
+		
+		if($bookid == '036')
+		{
+			$tocList = '<a href="' . GRM_URL . $actualID . '/index.djvu" target="_blank">ಸಂಪುಟ ' . intval($bookid) . '</a>';
+		}
+		else
+		{
+			$tocList = '<a href="' . BASE_URL . 'listing/treeview/' . $actualID . '">ಸಂಪುಟ ' . intval($bookid) . '</a>';
+		}
+		return $tocList;
+	}
+	
 	function display_stack($stack)
 	{
 		for($j=0;$j<sizeof($stack);$j++)

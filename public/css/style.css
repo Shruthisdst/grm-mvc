@@ -288,7 +288,7 @@ a:hover {
     margin-top: 0;
 }
 #head .title {
-    font-family: 'Gubbi';
+    font-family: 'nudi';
     color: #FFF;
     font-weight: 700;
     letter-spacing: 2px;
@@ -428,7 +428,7 @@ video#bgvid {
 .works{
     padding: 50px;
     font-size: 18px;
-    font-family: 'Gubbi';
+    font-family: 'nudi';
     border: 5px solid rgba( 0, 0, 0, 0.03 );
     background-color: rgba( 0, 0, 0, 0.02 );
     color: #AAA;
@@ -446,7 +446,7 @@ video#bgvid {
 }
 .shloka{
     margin: 75px 0;
-    font-family: 'Gubbi';
+    font-family: 'nudi';
     color: #3F51B5;
 }
 .shloka p{

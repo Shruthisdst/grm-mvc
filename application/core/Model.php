@@ -137,17 +137,14 @@ class Model {
 		return json_encode($data, JSON_UNESCAPED_UNICODE);
 	}
 	
-	public function listRukku($attr = '', $filter = '') {
+	public function listRukku($filter = '') {
 
-		if(!($attr)) return null;
-		
 		if($filter) {
 			
 			$filterArray = json_decode($filter, True);
 			
 			$filterPieces = [];
 			foreach ($filterArray as $key => $value) {
-				
 				$data{$key} = $value;
 				$filterPieces[] = $key . ' = \'' . $value . '\'';
 			}
@@ -159,7 +156,7 @@ class Model {
 
 		$dbh = $this->db->connect(DB_NAME);
 		if(is_null($dbh))return null;
-		$sth = $dbh->prepare('SELECT ' . $attr . ' FROM ' . RUKKU_TABLE . ' ' . $filter . ' ORDER BY ' . $attr);
+		$sth = $dbh->prepare('SELECT * FROM ' . RUKKU_TABLE . ' ' . $filter);
 		$sth->execute();
 
 		$data['list'] = [];
@@ -170,28 +167,8 @@ class Model {
 
 		$dbh = null;
 
-		if ($data) $data['attr'] = $attr;
-
 		return json_encode($data, JSON_UNESCAPED_UNICODE);
 	}
-
-    public function addVedicSymbols($text) {
-
-        $text = preg_replace("/\{0\}/", "", $text);
-        $text = preg_replace("/\{1\}/", "॒", $text);
-        $text = preg_replace("/\{2\}/", "॑", $text);
-        $text = preg_replace("/\{4\}/", "ँ", $text);
-        $text = preg_replace("/\{5\}/", "ऽ", $text);
-
-        return $text;
-    }
-
-    public function removeSwara($text) {
-
-        $text = preg_replace("/॒|॑/", "", $text);
-
-        return $text;
-    }
 
 }
 

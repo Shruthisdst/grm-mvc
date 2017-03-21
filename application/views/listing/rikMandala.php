@@ -6,7 +6,7 @@
 <?php
 foreach ($data['list'] as $row) {
 
-    echo '<li>' . $row['text1'] . '</li>' . "\n";
+    echo '<li>' . $row['text1'] . '</li>';
 }
 ?>
 </ol>

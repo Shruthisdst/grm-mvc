@@ -45,6 +45,24 @@ class listingModel extends Model {
 		$dbh = null;
 		return json_encode($data, JSON_UNESCAPED_UNICODE);
 	}
+
+	public function listVolumes(){
+
+		$dbh = $this->db->connect(DB_NAME);
+		
+		if(is_null($dbh))return null;
+		
+		$sth = $dbh->prepare('SELECT DISTINCT book_id FROM ' . RIGTOC_TABLE);
+		$sth->execute();
+
+		$data = array();
+		while($result = $sth->fetch(PDO::FETCH_ASSOC)) {
+			array_push($data, $result);
+		}
+
+		$dbh = null;
+		return json_encode($data, JSON_UNESCAPED_UNICODE);
+	}
 	
 }
 

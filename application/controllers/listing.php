@@ -20,6 +20,12 @@ class listing extends Controller {
 		($data) ? $this->view('listing/listToc', $data) : $this->view('error/index');
 	}
 
+	public function volumes() {
+		
+		$data = $this->model->listVolumes();
+		($data) ? $this->view('listing/volumeList', $data) : $this->view('error/index');
+	}
+
 	public function mandala($query = array()) {
 
 		$data = $this->model->listDistinctAttribute('mandala');
@@ -41,7 +47,7 @@ class listing extends Controller {
 		$sukta = (isset($query['sukta'])) ? $query['sukta'] : DEFAULT_SUKTA;
 
 		$filterJSON = '{"mandala" : "' . $mandala . '", "sukta" : "' . $sukta . '"}';
-		$data = $this->model->listRukku('text1', $filterJSON);
+		$data = $this->model->listRukku($filterJSON);
 		($data) ? $this->getComponent('listing/rikMandala', $data) : $this->view('error/index');
 	}
 }

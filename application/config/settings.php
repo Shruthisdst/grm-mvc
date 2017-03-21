@@ -4,6 +4,7 @@
 define('PURANA_TABLE', 'GM_Toc');
 define('MANDALA_TABLE', 'mandala_table');
 define('RUKKU_TABLE', 'Rukku_table');
+define('RIGTOC_TABLE', 'Rig_Toc');
 
 // Defaults
 define('DEFAULT_RIK', '1.1.1');
