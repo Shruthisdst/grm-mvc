@@ -567,6 +567,19 @@
       padding-left: 20px;
   }
 }
+.structure{
+  margin-top: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  margin-right: 60px;
+  
+  /*padding: 20px;*/
+}
+@media (max-width: 600px) {
+  .structure{
+    margin-right: 0px;
+    
+  }
+}
 .structure-1{
   margin-top: 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.25);
@@ -648,14 +661,25 @@
   color: #CCC;
   cursor: pointer;
 }
-.structure-1 .lead{
-background: #e52d27; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #e52d27 , #b31217); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #e52d27 , #b31217); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.structure .eng{
+	font-family: 'Open Sans';
+}
+.structure .lead{
+	background-image: url("../images/texture.jpg");
+	background-repeat: no-repeate;
 }
 
-.structure-1 .eng{
-	font-family: 'Open Sans';
+.structure h2.lead, h2.lead-head{
+  padding: 25px;
+  margin-bottom: 0px;
+  color: #2b2f3b;
+  font-size: 20px;
+  font-weight: 600;
+  min-width: 120px;
+  text-align: center;
+  line-height: 30px;
+  text-shadow: 1px 1px #737373;
 }
 .structure-1 h2.lead, h2.lead-head{
   padding: 25px;
@@ -664,8 +688,8 @@ background: linear-gradient(to left, #e52d27 , #b31217); /* W3C, IE 10+/ Edge, F
   font-size: 20px;
   font-weight: 600;
   min-width: 120px;
-  background-color: #777;
-  text-align: center;
+  background-color: #BF360C;
+  text-align: left;
   line-height: 30px;
 }
 h2.lead-head.red{
@@ -674,6 +698,32 @@ h2.lead-head.red{
 h2.lead-head.blue{
   background-color: #1565C0;
 }
+.structure ul{
+  padding: 25px;
+  text-align: center;
+}
+.structure li{
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.structure .list-inline .more{
+	margin-top: 15px;
+	padding: 10px;
+	min-width: 350px;
+	background-color: #f2f2f2;
+}
+.structure li a{
+  font-size: 17px;
+  font-weight: bold;
+  color: #4c5367;
+}
+.structure li a.selected{
+  font-size: 36px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
 .structure-1 ul{
   padding: 25px;
   text-align: left;

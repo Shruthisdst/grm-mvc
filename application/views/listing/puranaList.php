@@ -23,7 +23,7 @@
 		echo '<ol>';
 
 foreach ($data as $row) {
-	echo '<li class="gap-below"><a href="' . BASE_URL . 'listing/treeview/' . $row['book_id'] . '">' . $row['btitle'] . '</a></li>';
+	echo '<li><a href="' . BASE_URL . 'listing/treeview/' . $row['book_id'] . '">' . $row['btitle'] . '</a></li>';
 }
 echo '</ol>';
 ?>
